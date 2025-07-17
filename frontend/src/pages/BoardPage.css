@@ -1,0 +1,122 @@
+/* src/pages/BoardPage.css */
+
+.board-container {
+  padding: 20px;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9fc;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.header h2 {
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.logout-button {
+  background-color: #e53e3e;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.logout-button:hover {
+  background-color: #c53030;
+}
+
+.task-form,
+.edit-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.task-form input,
+.edit-form input,
+.task-form select,
+.edit-form select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.task-form button,
+.edit-form button {
+  background-color: #38a169;
+  color: white;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.task-form button:hover,
+.edit-form button:hover {
+  background-color: #2f855a;
+}
+
+.status-column {
+  background-color: #edf2f7;
+  padding: 10px;
+  border-radius: 8px;
+  min-height: 300px;
+  transition: background 0.3s ease;
+}
+
+.task-card {
+  background-color: white;
+  padding: 10px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.task-card:hover {
+  transform: scale(1.02);
+}
+
+.task-card h4 {
+  font-weight: 600;
+  color: #2d3748;
+}
+
+.task-card p {
+  font-size: 0.9rem;
+  color: #4a5568;
+}
+
+.task-card .actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+}
+
+.task-card button {
+  font-size: 0.75rem;
+  color: #3182ce;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.task-card button:hover {
+  text-decoration: underline;
+}
+
+.activity-log {
+  background-color: #f7fafc;
+  padding: 10px;
+  border-radius: 8px;
+  max-height: 400px;
+  overflow-y: auto;
+}
