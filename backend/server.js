@@ -10,7 +10,7 @@ const app = express();
 const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
-    origin: "*",
+    origin: "https://collab-todo-mq2uvuujq-abhishekkumar2002s-projects.vercel.app/login",
     methods: ["GET", "POST"]
   }
 });
