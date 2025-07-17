@@ -9,7 +9,7 @@ require("dotenv").config();
 const app = express();
 
 // ----- Config -----
-const FRONTEND_URL = process.env.FRONTEND_URL || "*"; // e.g., https://collab-todo-mq2uvuujq-abhishekkumar2002s-projects.vercel.app
+const FRONTEND_URL = process.env.FRONTEND_URL || "https://collab-todo-mq2uvuujq-abhishekkumar2002s-projects.vercel.app/"; 
 
 // ----- Middleware -----
 app.use(cors({
